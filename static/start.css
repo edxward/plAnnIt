@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --logo-scale: 5;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+  
+body {
+    background: linear-gradient(45deg, #121212, #1c1c1c, #121212);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #bb86fc;
+    margin-bottom: 10px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+}
+
+.logo-container .bulb {
+    width: calc(55px * var(--logo-scale));
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-container .text {
+    width: calc(150px * var(--logo-scale));
+    height: auto;
+}
+
+
+.main-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-content h1 {
+    font-size: 4.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 0.5s ease-in-out;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.start-button {
+    background-color: #8a47d6;
+    color: #121212;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 15px 40px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(138, 71, 214, 0.4);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    animation: bounceIn 1.5s ease;
+}
+
+.start-button:hover {
+    background-color: #7a3ec1;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(122, 62, 193, 0.6);
+}
+
+.start-button:active {
+    transform: scale(0.98);
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #bb86fc;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Bounce In Animation for the Button */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

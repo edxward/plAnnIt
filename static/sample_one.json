@@ -1,0 +1,50 @@
+[
+    {
+        "Monday": [
+            {"School": ["07:30", "15:30"]},
+            {"Biology Project Part 1": ["15:45", "16:45"]},
+            {"Football Practice": ["16:00", "17:30"]},
+            {"Relaxation and Meditation": ["17:45", "18:15"]},
+            {"Piano Lesson": ["18:30", "19:30"]},
+            {"Organizing Desk": ["19:45", "20:30"]}
+        ],
+        "Tuesday": [
+            {"School": ["07:30", "15:30"]},
+            {"GCSE Maths Revision Part 1": ["15:45", "16:45"]},
+            {"Basketball Training": ["16:30", "18:00"]},
+            {"Math Tutoring": ["18:30", "20:00"]},
+            {"Gaming Session with Friends": ["20:15", "21:45"]}
+        ],
+        "Wednesday": [
+            {"School": ["07:30", "15:30"]},
+            {"Science Club": ["16:00", "17:30"]},
+            {"Karate Class": ["18:00", "19:30"]},
+            {"GCSE Science Revision Part 1": ["19:45", "20:45"]}
+        ],
+        "Thursday": [
+            {"School": ["07:30", "15:30"]},
+            {"Spanish Tutoring": ["15:45", "16:45"]},
+            {"Art Workshop": ["17:00", "18:30"]},
+            {"History Essay Part 1": ["18:45", "20:15"]},
+            {"Art Portfolio Work Part 1": ["20:30", "21:30"]}
+        ],
+        "Friday": [
+            {"School": ["08:30", "13:30"]},
+            {"Biology Project Part 2": ["14:00", "15:00"]},
+            {"Household Chores": ["15:15", "16:15"]},
+            {"History Essay Part 2": ["16:30", "18:00"]}
+        ],
+        "Saturday": [
+            {"Swimming Practice": ["09:00", "11:00"]},
+            {"Photography Club": ["11:30", "13:00"]},
+            {"GCSE Science Revision Part 2": ["13:30", "14:30"]},
+            {"Relaxation and Meditation": ["14:45", "15:15"]}
+        ],
+        "Sunday": [
+            {"GCSE Maths Revision Part 2": ["10:00", "11:00"]},
+            {"Art Portfolio Work Part 2": ["11:15", "12:15"]},
+            {"Gaming Session with Friends": ["12:30", "14:00"]}
+        ]
+    },
+    70
+]

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plAnnIt : Custom Timetables</title>
+    <link rel="stylesheet" href="/results.css">
+</head>
+<body>
+    <h1>Weekly Timetable</h1>
+
+    <div class="button-container">
+        <button class="button active" id="button1" onclick="loadTableFromFile('/{{ timetable1 }}', this)">Timetable 1</button>
+        <button class="button" id="button2" onclick="loadTableFromFile('/{{ timetable2 }}', this)">Timetable 2</button>
+    </div>
+
+    <div class="timetable-container" id="schedule"></div>
+
+    <script src="/results.js"></script>
+
+    <button class="button export" style="font-weight: bold;" onclick="getCsv(document.getElementById('button1').classList.contains('active') ? 0 : 1)">
+        Download as CSV
+    </button>
+</body>
+</html>

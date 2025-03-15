@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plAnnIt : Timetable Creator</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Edit Your Schedule</h2>
+        <form id="scheduleForm">
+            <section class="form-section">
+                <h3>School Timetable</h3>
+                <div class="school-timings-section">
+                    <div class="form-group">
+                        <label>Monday - Thursday Start Time:</label>
+                        <input type="time" id="monThuStart" value="08:30">
+                    </div>
+                    <div></div>
+                    <div class="form-group">
+                        <label>Monday - Thursday Finish Time:</label>
+                        <input type="time" id="monThuFinish" value="15:30">
+                    </div>
+                </div>
+
+                <div class="school-timings-section">
+                    <div class="form-group">
+                        <label>Friday Start Time:</label>
+                        <input type="time" id="friStart" value="08:30">
+                    </div>
+                    <div></div>
+                    <div class="form-group">
+                        <label>Friday Finish Time:</label>
+                        <input type="time" id="friFinish" value="14:00">
+                    </div>
+                </div>
+
+                <h3>ECAs (Extracurricular Activities)</h3>
+                <div id="ecaContainer"></div>
+                <button type="button" onclick="addECA()" class="shadow-button">+ Add ECA ⚽</button>
+            </section>
+
+            <section class="form-section">
+                <h3>Other Activities</h3>
+                <div id="otherActivitiesContainer"></div>
+                <button type="button" onclick="addOtherActivity()" class="shadow-button">+ Add Other Activity 🎮</button>
+            </section>
+
+            <button type="button" onclick="submitForm()" id="submitButton" class="shadow-button">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

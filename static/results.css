@@ -1,0 +1,92 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    color: #bb86fc;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #bb86fc;
+  }
+
+  .button-container {
+    margin-bottom: 30px;
+  }
+
+  .button {
+    background-color: #bb86fc;
+    color: #121212;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .button:hover {
+    background-color: #9b6be8;
+  }
+
+  .button.active {
+    background-color: #8a47d6;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  h3 {
+    color: #bb86fc;
+    margin-top: 30px;
+    border-bottom: 2px solid #bb86fc;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+
+  .timetable-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  th, td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #272727;
+    color: #bb86fc;
+  }
+
+  td {
+    background-color: #1a1a1a;
+  }
+
+  tr:hover td {
+    background-color: #292929;
+  }
+
+.export {
+    background-color: green;
+    font-weight: bold;
+}
+
+.export:hover {
+    background-color: rgb(5, 97, 5);
+}

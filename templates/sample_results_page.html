@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timetable Selector</title>
+  <link rel="stylesheet" href="results.css">
+</head>
+<body>
+
+  <h1>Weekly Timetable</h1>
+
+  <div class="button-container">
+    <button class="button active" id="button1" onclick="loadTableFromFile('sample_one.json', this)">Timetable 1</button>
+    <button class="button" id="button2" onclick="loadTableFromFile('sample_two.json', this)">Timetable 2</button>
+  </div>
+
+  <div class="timetable-container" id="schedule"></div>
+
+    <script src="results.js"></script>
+
+</body>
+</html>
